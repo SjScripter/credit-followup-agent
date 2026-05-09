@@ -20,7 +20,7 @@ def run_agent(dry_run: bool = True):
     df = pd.read_csv("data/invoices.csv")
     df["days_overdue"] = df["due_date"].apply(calculate_days_overdue)
 
-    print(f"\n📂 Loaded {len(df)} invoices\n")
+    print(f"\n Loaded {len(df)} invoices\n")
 
     for _, row in df.iterrows():
         invoice = row.to_dict()
@@ -29,7 +29,7 @@ def run_agent(dry_run: bool = True):
         stage_info = get_stage(int(invoice["days_overdue"]))
 
         if stage_info is None:
-            print(f"  ✅ Not overdue yet — skipping.\n")
+            print(f"   Not overdue yet — skipping.\n")
             continue
 
         if stage_info["stage"] == 5:
@@ -37,11 +37,11 @@ def run_agent(dry_run: bool = True):
             log_email(invoice, stage_info, {"subject": "N/A", "body": "Flagged for legal review"}, status="flagged")
             continue
 
-        print(f"  ✉️  Generating {stage_info['tone']} email...")
+        print(f"    Generating {stage_info['tone']} email...")
         email = generate_email(invoice, stage_info)
 
-        print(f"  📧 Subject: {email['subject']}")
-        print(f"  📝 Preview: {email['body'][:100]}...")
+        print(f"   Subject: {email['subject']}")
+        print(f"   Preview: {email['body'][:100]}...")
 
         log_email(invoice, stage_info, email, status="dry-run" if dry_run else "sent")
         print()
