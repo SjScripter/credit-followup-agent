@@ -1,0 +1,6 @@
+invoice_no,client_name,client_email,amount,due_date,followup_count
+INV-2024-001,Rajesh Kapoor,rajesh@example.com,45000,2026-05-03,0
+INV-2024-002,Priya Sharma,priya@example.com,72000,2026-04-24,2
+INV-2024-003,Amit Verma,amit@example.com,30000,2026-04-13,3
+INV-2024-004,Neha Gupta,neha@example.com,90000,2026-04-03,4
+INV-2024-005,Suresh Iyer,suresh@example.com,15000,2026-04-30,1
