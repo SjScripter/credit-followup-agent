@@ -1,11 +1,11 @@
 # Credit Follow-Up Email Agent
-### AI Enablement Internship — Task 2 | Travel Corporation India (TCI)
+
 
 ---
 
 ## Project Overview
 
-The Credit Follow-Up Email Agent is an AI-powered automation tool built for the Finance team at Travel Corporation India. It automatically identifies overdue invoices, determines the correct escalation stage based on the number of days overdue, and generates personalised, professional follow-up emails using a Large Language Model (LLM).
+The Credit Follow-Up Email Agent is an AI-powered automation tool built for the Finance team . It automatically identifies overdue invoices, determines the correct escalation stage based on the number of days overdue, and generates personalised, professional follow-up emails using a Large Language Model (LLM).
 
 The agent operates in dry-run mode by default, meaning all emails are generated and logged without actually being sent — making it safe to demo and test on real business data.
 
@@ -231,5 +231,3 @@ Each user prompt includes:
 
 **Name:** Sarthak  
 **GitHub:** https://github.com/SjScripter  
-**Internship:** AI Enablement — Travel Corporation India (TCI)  
-**Task:** Task 2 — Finance Credit Follow-Up Email Agent
